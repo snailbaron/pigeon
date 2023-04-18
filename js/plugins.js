@@ -3,7 +3,7 @@
 var $plugins =
 [
 {"name":"CC_AutoFullScreen","status":true,"description":"Start game in full screen mode.","parameters":{"default":"true","Scene_Options":"","optionCommandEnable":"true","textOptionCommand":"Full Screen"}},
-{"name":"SNBR_DebugSwitches","status":true,"description":"Set switches for debugging","parameters":{"Switches":"[\"Старуха ушла\",\"Старуха порвала рецепт\",\"Положила документы мальчика\",\"Клаус поговорил с Гретхен\",\"Поговорил со Штефаном\"]"}},
+{"name":"SNBR_DebugSwitches","status":true,"description":"Set switches for debugging","parameters":{"Switches":"[\"Поговорил со Штефаном\",\"Омыл рот\",\"Справил нужду\"]","Items":"[]","Gold":"0"}},
 {"name":"SNBR_CustomMenu","status":true,"description":"Custom main menu","parameters":{"ChaptersMenuItem":"Выбор главы","Back":"Назад","Chapters":"[\"{\\\"Name\\\":\\\"Пролог\\\",\\\"MapId\\\":\\\"10\\\",\\\"X\\\":\\\"0\\\",\\\"Y\\\":\\\"0\\\"}\",\"{\\\"Name\\\":\\\"Глава 1: Больной\\\",\\\"MapId\\\":\\\"23\\\",\\\"X\\\":\\\"0\\\",\\\"Y\\\":\\\"0\\\"}\",\"{\\\"Name\\\":\\\"Глава 2: Клаус\\\",\\\"MapId\\\":\\\"27\\\",\\\"X\\\":\\\"0\\\",\\\"Y\\\":\\\"0\\\"}\"]"}},
 {"name":"SNBR_SkipTitleScreen","status":true,"description":"Skip title screen, and go directly to New Game","parameters":{}}
 ];

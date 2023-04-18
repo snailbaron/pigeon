@@ -9,6 +9,18 @@
  * @default []
  * @type string[]
 
+ * @param Items
+ * @text Items
+ * @desc Items to add to party for debugging
+ * @default []
+ * @type string[]
+
+ * @param Gold
+ * @text Gold
+ * @desc Amount of party's gold
+ * @default 0
+ * @type number
+
  * @help
  * Set certain switches before starting the game. Works only when you select
 */
@@ -18,20 +30,30 @@
 
     var parameters = PluginManager.parameters("SNBR_DebugSwitches");
 
-    console.log(`switch names before parsing: '${parameters["Switches"]}'`);
     var switchNames = JsonEx.parse(parameters["Switches"]);
-    console.log(`switchNames = "${switchNames}"`);
+    var itemNames = JsonEx.parse(parameters["Items"]);
+    var giveGold = Number(parameters["Gold"]);
 
     var _DataManager_setupNewGame = DataManager.setupNewGame;
     DataManager.setupNewGame = function() {
         _DataManager_setupNewGame.call(this);
+
         for (var switchName of switchNames) {
             var switchIndex = $dataSystem.switches.indexOf(switchName);
             if (switchIndex == -1) {
                 throw new Error(`SNBR_DebugSwitches: no switch named "${switchName}"`);
             }
-            console.log(`setting switch "${switchName}" with index ${switchIndex}`)
             $gameSwitches.setValue(switchIndex, true);
         }
+
+        for (var itemName of itemNames) {
+            var item = $dataItems.find(x => x?.name == itemName);
+            if (!item) {
+                throw new Error(`SNBR_DebugSwitches: no item named "${itemName}"`);
+            }
+            $gameParty.gainItem(item, 1, false);
+        }
+
+        $gameParty.gainGold(giveGold);
     }
 })();
