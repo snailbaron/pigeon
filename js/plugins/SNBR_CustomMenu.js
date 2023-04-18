@@ -10,7 +10,7 @@
  * @type string
  
  * @param Back
- * @Text Chapter select: back
+ * @text Chapter select: back
  * @desc Name of chapter menu item: back
  * @default Back
  * @type string
