@@ -30,9 +30,9 @@
 
     var parameters = PluginManager.parameters("SNBR_DebugSwitches");
 
-    var switchNames = JsonEx.parse(parameters["Switches"]);
-    var itemNames = JsonEx.parse(parameters["Items"]);
-    var giveGold = Number(parameters["Gold"]);
+    var switchNames = JsonEx.parse(parameters["Switches"] || "[]");
+    var itemNames = JsonEx.parse(parameters["Items"] || "[]");
+    var giveGold = Number(parameters["Gold"] || "0");
 
     var _DataManager_setupNewGame = DataManager.setupNewGame;
     DataManager.setupNewGame = function() {
