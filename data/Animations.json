@@ -1,4 +1,5 @@
 [
 null,
-{"id":1,"displayType":0,"effectName":"Flash","flashTimings":[{"frame":0,"duration":30,"color":[255,255,255,255]}],"name":"Получение контроля","offsetX":0,"offsetY":0,"rotation":{"x":0,"y":0,"z":0},"scale":50,"soundTimings":[],"speed":100,"timings":[]}
+{"id":1,"displayType":0,"effectName":"Flash","flashTimings":[{"frame":0,"duration":30,"color":[255,255,255,255]}],"name":"Получение контроля","offsetX":0,"offsetY":0,"rotation":{"x":0,"y":0,"z":0},"scale":50,"soundTimings":[],"speed":100,"timings":[]},
+{"id":2,"displayType":0,"effectName":"Bodyslam","flashTimings":[],"name":"Трудовая атака","offsetX":0,"offsetY":0,"rotation":{"x":0,"y":0,"z":0},"scale":100,"soundTimings":[],"speed":100,"timings":[]}
 ]

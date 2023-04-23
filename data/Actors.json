@@ -1,11 +1,11 @@
 [
 null,
-{"id":1,"battlerName":"","characterIndex":3,"characterName":"People1","classId":1,"equips":[0,0,0,0,0],"faceIndex":3,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Хельга","nickname":"","note":"","profile":""},
+{"id":1,"battlerName":"","characterIndex":3,"characterName":"People1","classId":0,"equips":[0,0,0,0,0],"faceIndex":3,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Хельга","nickname":"","note":"","profile":""},
 {"id":2,"battlerName":"","characterIndex":1,"characterName":"People1","classId":1,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Фелиция","nickname":"","note":"","profile":""},
 {"id":3,"battlerName":"","characterIndex":5,"characterName":"People1","classId":1,"equips":[0,0,0,0,0],"faceIndex":5,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Анна","nickname":"","note":"","profile":""},
 {"id":4,"battlerName":"","characterIndex":6,"characterName":"People1","classId":1,"equips":[0,0,0,0,0],"faceIndex":6,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Генрих","nickname":"","note":"","profile":""},
 {"id":5,"battlerName":"","characterIndex":4,"characterName":"People1","classId":2,"equips":[0,0,0,0,0],"faceIndex":4,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Клаус","nickname":"","note":"","profile":""},
 {"id":6,"battlerName":"","characterIndex":3,"characterName":"People4","classId":2,"equips":[0,0,0,0,0],"faceIndex":3,"faceName":"People4","traits":[],"initialLevel":1,"maxLevel":99,"name":"Гретхен","nickname":"","note":"","profile":""},
-{"id":7,"battlerName":"","characterIndex":0,"characterName":"Nature","classId":4,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Nature","traits":[],"initialLevel":1,"maxLevel":99,"name":"Собака Клаус","nickname":"","note":"","profile":""},
-{"id":8,"battlerName":"","characterIndex":2,"characterName":"Nature","classId":4,"equips":[0,0,0,0,0],"faceIndex":2,"faceName":"Nature","traits":[],"initialLevel":1,"maxLevel":99,"name":"Голубь","nickname":"","note":"","profile":""}
+{"id":7,"battlerName":"","characterIndex":0,"characterName":"Nature","classId":3,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Nature","traits":[],"initialLevel":1,"maxLevel":99,"name":"Собака Клаус","nickname":"","note":"","profile":""},
+{"id":8,"battlerName":"","characterIndex":2,"characterName":"Nature","classId":3,"equips":[0,0,0,0,0],"faceIndex":2,"faceName":"Nature","traits":[],"initialLevel":1,"maxLevel":99,"name":"Голубь","nickname":"","note":"","profile":""}
 ]

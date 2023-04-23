@@ -3,9 +3,15 @@
  * @author snailbaron
  * @plugindesc Custom main menu
 
+ * @param QuitMenuItem
+ * @text Menu Item: Quit
+ * @desc Name of the "Quit" item in the main menu
+ * @default Quit
+ * @type string
+
  * @param ChaptersMenuItem
  * @text Menu Item: Chapters
- * @desc Name of the "Chapters" item in main menu
+ * @desc Name of the "Chapters" item in the main menu
  * @default Chapters
  * @type string
  
@@ -128,6 +134,10 @@
         this._commandWindow.setHandler("continue", this.commandContinue.bind(this));
         this._commandWindow.setHandler("chapters", this.commandChapters.bind(this));
         this._commandWindow.setHandler("options", this.commandOptions.bind(this));
+        this._commandWindow.setHandler("quit", () => {
+            this.fadeOutAll();
+            SceneManager.exit();
+        });
         this.addWindow(this._commandWindow);
     };
 
@@ -135,7 +145,7 @@
         const offsetX = $dataSystem.titleCommandWindow.offsetX;
         const offsetY = $dataSystem.titleCommandWindow.offsetY;
         const ww = this.mainCommandWidth();
-        const wh = this.calcWindowHeight(4, true);
+        const wh = this.calcWindowHeight(5, true);
         const wx = (Graphics.boxWidth - ww) / 2 + offsetX;
         const wy = Graphics.boxHeight - wh - 96 + offsetY;
         return new Rectangle(wx, wy, ww, wh);
@@ -147,5 +157,6 @@
         this.addCommand(TextManager.continue_, "continue", continueEnabled);
         this.addCommand(parameters["ChaptersMenuItem"], "chapters");
         this.addCommand(TextManager.options, "options");
+        this.addCommand(parameters["QuitMenuItem"], "quit");
     };
 })();
